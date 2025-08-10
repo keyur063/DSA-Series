@@ -1,0 +1,16 @@
+Encapsulation:
+    Data Hiding
+    Code Resuability
+    Read Only (getter) Data
+
+Inheritance:
+    Private: Accessed inside class only 
+    Protected: Accessed inside parent and derived class only 
+    Public: Accessed outside class also
+
+Polymorphism:
+    Compile Time Polymorphism(Static): 
+        Function Overloading: Functions that differ only in return type cannot be overloaded
+        Operator Overloading
+    Run Time Polymorphism(Dynamic):
+        Method Overriding: Method of both classes should have same name and parameters, done through Inheritance only

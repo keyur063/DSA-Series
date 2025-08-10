@@ -1,0 +1,16 @@
+# Binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# Debug/Release folders
+build/
+bin/
+
+# VS Code settings
+.vscode/
+
+# Other temp files
+*.log
+*.tmp
