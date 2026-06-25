@@ -52,5 +52,5 @@ int NthRoot(int m, int n){ //nth root of m
 
 int main(){
     cout << NthRoot(27, 3) << endl;
-    cout << NthRoot(69, 4) << endl;
+    cout << NthRoot(10,2) << endl;
 }

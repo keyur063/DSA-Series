@@ -9,7 +9,7 @@ int main(){
     vector<int> ans(arr.size(), 0);
     stack<int> s;
 
-    for(int i=arr.size()-1; i>=0; i--){
+    for(int i=arr.size()-1; i>=0; i--) {
         while(!s.empty() && s.top() <= arr[i])
             s.pop();
 
@@ -20,10 +20,6 @@ int main(){
 
         s.push(arr[i]);
     }
-    
-    for(int val: ans){
-        cout << val << " ";
-    } cout << endl;
 
     //TC = SC = O(n)
 }

@@ -30,9 +30,9 @@ int allocateBooks(vector<int> &arr, int n, int m){
     while(st<=end){
         int mid = st + (end-st)/2;
 
-        if(isValid(arr, n, m, mid)) //left
+        if(isValid(arr, n, m, mid)) // move left to minimize
             end = mid-1;
-        else //right
+        else 
             st = mid+1;
     }
     return st;

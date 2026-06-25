@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-bool isValid(vector<int> &arr, int N, int C, int minAllowedDist){//O(N)
+bool isValid(vector<int> &arr, int N, int C, int minAllowedDist){  //O(N)
     int cows=1, lastStallPos=arr[0];
 
     for(int i=1; i<N; i++){
@@ -17,7 +17,7 @@ bool isValid(vector<int> &arr, int N, int C, int minAllowedDist){//O(N)
     return false;
 }
 
-//n- no. of stalls, m- no. of cows
+//n- no. of stalls, c- no. of cows
 int minDistance(vector<int> &arr, int N, int C){
     sort(arr.begin(), arr.end()); //O(NlogN)
 
@@ -28,10 +28,10 @@ int minDistance(vector<int> &arr, int N, int C){
     while(low <= high){ //O(log(Range)*N)
         int mid = low + (high - low)/2;
 
-        if(isValid(arr, N, C, mid)){ //right
+        if(isValid(arr, N, C, mid)){ // dist can be increased
             low = mid + 1;
         }
-        else{ //left
+        else{ // dist must reduce
             high = mid - 1;
         }
     }
